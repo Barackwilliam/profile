@@ -5,7 +5,7 @@ This is a personal portfolio website that showcases the skills, projects, and co
 ## Features
 
 - **Responsive Design**: The portfolio is fully responsive and adapts to different screen sizes, including mobile and tablet.
-- **Projects**: Showcases William's projects with clickable links and interactive hover effects.
+- **Projects**: Showcases My projects with clickable links and interactive hover effects.
 - **Contact Info**: Provides email and phone contact options.
 - **Animations**: Subtle animations are included for a more engaging experience.
 
@@ -13,8 +13,6 @@ This is a personal portfolio website that showcases the skills, projects, and co
 
 1. Clone or download the repository.
 2. Open the `index.html` file in a browser to view the website.
-
-## File Structure
 
 
 ## Technologies Used

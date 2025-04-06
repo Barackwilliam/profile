@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="William's Professional Portfolio Website. Explore my journey in software development, technology, and innovation.">
+    <meta name="keywords" content="William, Portfolio, Software Development, AI, Technology, Innovator">
+    <title>William Chipindi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #0c0c0c);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            font-family: 'Orbitron', sans-serif;
+            color: #00ff99;
+            margin-bottom: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            margin: 0;
+            text-shadow: 0 0 15px rgba(0, 255, 153, 0.6);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            margin: 0 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .bio {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .bio img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00ff99;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #00ff99;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #bbb;
+            line-height: 1.8;
+            letter-spacing: 1px;
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .projects ul li {
+            font-size: 1.3em;
+            color: #bbb;
+            margin: 10px 0;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .projects ul li:hover {
+            color: #00ff99;
+            transform: scale(1.05);
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .project-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .project-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .project-item a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .project-item a:hover {
+            color: #00ff99;
+        }
+
+        .btn {
+            background-color: #00ff99;
+            color: #0c0c0c;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #00cc7a;
+            transform: scale(1.05);
+        }
+
+        .contact .btn {
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3.5em;
+            }
+
+            header p {
+                font-size: 1.3em;
+            }
+
+            .main-container {
+                padding: 10px;
+            }
+
+            .bio p, .projects p, .contact p {
+                font-size: 1em;
+            }
+
+            .projects ul li {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            .main-container {
+                margin: 0 10px;
+            }
+
+            .bio p, .projects p, .contact p {
+                font-size: 0.95em;
+            }
+
+            .projects ul li {
+                font-size: 1.1em;
+            }
+
+            .btn {
+                padding: 8px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to William's Portfolio</h1>
+        <p>Exploring the Future of Technology</p>
+    </header>
+
+    <div class="main-container">
+        <!-- About Me Section -->
+        <section class="bio">
+            <img src="image.png" alt="William's Profile Picture">
+            <h2>About Me</h2>
+            <p>I'm William, a passionate software developer who thrives in creating innovative technological solutions. I specialize in web development using Django, Vue.js, and artificial intelligence. My aim is to push the boundaries of technology and create impactful experiences that will shape the future.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <p>Here are a few of the projects I've worked on:</p>
+            <ul>
+                <li class="project-item">
+                    <a href="https://nyumbachap.com" target="_blank">
+                        <img src="nyumbachap.png" alt="NyumbaChap Logo">
+                        <strong>Platform ya Kutafuta nyumba za kupanga, hostel, nyumba za wageni nk</strong>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://sairisgroup.com" target="_blank">
+                        <img src="https://www.sairisgroup.com/static/images/logo.png" alt="Sairis Group Logo">
+                        <strong>Duka Mtandaoni</strong>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://app.24security.co.tz" target="_blank">
+                        <img src="evath.png" alt="24Security Logo">
+                        <strong>SuperMarket</strong>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://doxaconnect.co.tz" target="_blank">
+                        <img src="https://www.doxaconnect.co.tz/static/img/logo/logoc.png" alt="DoxaConnect Logo">
+                        <strong>E-commerce website</strong>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://ebenezerimindeducation.com" target="_blank">
+                        <img src="https://www.ebenezerimindeducation.com/static/img/ebe.jpg" alt="Ebenezeri Mind Education Logo">
+                        <strong>Social Group website</strong>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://apex4.site" target="_blank">
+                        <img src="https://www.apex4.site/static/images/apex_logo.png" alt="Apex4 Logo">
+                        <strong>Duka Mtandaoni</strong>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in collaborating or discussing projects? Feel free to reach out to me!</p>
+            <p>Email: <a href="mailto:support@nyumbachap.com" class="btn">Email Me</a></p>
+            <p>Phone: <a href="tel:+0629712678" class="btn">0629712678</a></p>
+        </section>
+    </div>
+</body>
+</html>
